@@ -420,8 +420,12 @@ body {
 /* ===== PERFIL SECTION ===== */
 .perfil-section {
     padding: 8rem 0;
-    background:
-        linear-gradient(180deg, var(--bg-dark) 0%, #0e0608 50%, var(--bg-dark) 100%);
+    background-image:
+        linear-gradient(rgba(8, 5, 8, 0.82), rgba(14, 6, 8, 0.88)),
+        url("img/img safijiiva.jpg");
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
     border-top: 1px solid var(--border-crimson);
     border-bottom: 1px solid var(--border-crimson);
 }
@@ -502,18 +506,19 @@ body {
 
 .perfil-image {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     padding: 1.5rem;
     background: transparent;
 }
 
 .perfil-image img {
-    width: 200%;
-    height: 200%;
-    max-width: 300%;
+    width: 80%;
+    height: auto;
+    max-width: 80%;
     display: block;
     border-radius: 2px;
+    margin-left: auto;
 }
 
 /* ===== SAPPHIRE SECTION ===== */
