@@ -724,3 +724,18 @@ body {
 
     .sapphire-section { padding: 7rem 0; }
 }
+
+.footer-authors {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.footer-authors a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-authors a:hover {
+    text-decoration: underline;
+}
