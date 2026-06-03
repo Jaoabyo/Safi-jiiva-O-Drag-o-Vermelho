@@ -488,6 +488,43 @@ body {
     letter-spacing: 0.04em;
 }
 
+.perfil-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.perfil-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.perfil-description {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: var(--text);
+    text-align: justify;
+}
+
+.perfil-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background: transparent;
+}
+
+.perfil-image img {
+    width: 200%;
+    height: 200%;
+    max-width: 300%;
+    display: block;
+    border-radius: 2px;
+}
+
 /* ===== SAPPHIRE SECTION ===== */
 .sapphire-section {
     position: relative;
@@ -679,6 +716,11 @@ body {
     }
 
     .lore-accent-line { display: none; }
+
+    .perfil-content {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
 
     .perfil-row {
         grid-template-columns: 160px 1px 1fr;
