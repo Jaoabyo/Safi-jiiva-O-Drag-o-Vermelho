@@ -420,9 +420,9 @@ body {
 .lore-text p:last-child { margin-bottom: 0; }
 
 .highlight-sapphire {
-    color: var(--sapphire-light);
+    color: var(--crimson-light);
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /* ===== PERFIL SECTION ===== */
