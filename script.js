@@ -9,7 +9,6 @@ window.addEventListener('scroll', () => {
 // Spawn embers (crimson particles) in the hero
 (function spawnEmbers() {
     const container = document.getElementById('particles');
-    const container = document.getElementById('particles');
     const siteContainer = document.getElementById('site-particles');
     if (!container && !siteContainer) return;
 
