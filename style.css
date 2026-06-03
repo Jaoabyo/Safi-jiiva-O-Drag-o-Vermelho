@@ -178,6 +178,14 @@ body {
     pointer-events: none;
 }
 
+/* Partículas aplicadas em todo o site (mesma estética do banner) */
+.site-particles {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
 .particle {
     position: absolute;
     border-radius: 50%;

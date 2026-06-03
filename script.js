@@ -9,7 +9,9 @@ window.addEventListener('scroll', () => {
 // Spawn embers (crimson particles) in the hero
 (function spawnEmbers() {
     const container = document.getElementById('particles');
-    if (!container) return;
+    const container = document.getElementById('particles');
+    const siteContainer = document.getElementById('site-particles');
+    if (!container && !siteContainer) return;
 
     const fragment = document.createDocumentFragment();
     for (let i = 0; i < 45; i++) {
@@ -28,7 +30,9 @@ window.addEventListener('scroll', () => {
         ].join(';');
         fragment.appendChild(p);
     }
-    container.appendChild(fragment);
+    // Append to hero container and also to the site-wide container if present
+    if (container) container.appendChild(fragment);
+    if (siteContainer) siteContainer.appendChild(fragment.cloneNode(true));
 })();
 
 // Spawn sapphire particles in the Sapphire section
