@@ -62,17 +62,14 @@ window.addEventListener('scroll', () => {
     container.appendChild(fragment);
 })();
 
-// Scroll reveal
+// Scroll reveal — delays controlados via data-delay no HTML
 const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (!entry.isIntersecting) return;
-        const el       = entry.target;
-        const siblings = [...el.parentElement.querySelectorAll('[data-reveal]')];
-        const index    = siblings.indexOf(el);
-        setTimeout(() => el.classList.add('revealed'), index * 120);
-        revealObserver.unobserve(el);
+        entry.target.classList.add('revealed');
+        revealObserver.unobserve(entry.target);
     });
-}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+}, { threshold: 0.08, rootMargin: '0px 0px -60px 0px' });
 
 document.querySelectorAll('[data-reveal]').forEach(el => revealObserver.observe(el));
 
